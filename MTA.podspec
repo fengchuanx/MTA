@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/fengchuanx/MTA.git", :tag => s.version }
   s.source_files  = "MTA/*.h"
-  s.vendored_libraries = "MTA/libmtasdk.a", "MTA/libidfa.a"
+  s.vendored_libraries = "MTA/*.a"
   s.frameworks  = "AdSupport", "SystemConfiguration", "CoreTelephony"
   s.libraries = "z", "sqlite3"
   s.requires_arc = true
